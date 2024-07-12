@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatalystCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times" ></i>
+       </div>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <nav class="menu">
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="#">Home</a></li>
+                    <li class="navbar-item"><a href="#servicos">Serviços</a></li>
+                    <li class="navbar-item"><a href="#Sobre-nos">Sobre Nós</a></li>
+                    <li class="navbar-item"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+          
+            <div class="bts">
+                <i class="fa fa-solid fa-envelope"></i>
+            </div>
+           </div>
+    </header>
+
+    <section>
+        <div class="container-home">
+            <div class="icon-CatalystCode">
+                <img src="./assets/Icon.png" alt="">
+            </div>
+            <h1>Transformando suas ideias em realidade digital</h1>
+            <p>&lt;Desenvolvimento de software personalizado e soluções inovadoras para impulsionar o seu
+                negócio/&gt;<span class="ponto-final">.</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="titulo">
+            <h1>Nossos Serviços</h1>
+        </div>
+
+        <div class="serviços-container-boxes">
+            <div class="box-service1">
+                <div class="content-img"><img src="./assets/WebService.png" alt="" logo1 /></div>
+                <h2>&lt;Desenvolvimento Web/&gt;</h2>
+                <p>Criação de sites responsivos e modernos que proporcionam a melhor experiência ao usuário.</p>
+            </div>
+            <div class="box-service2">
+                <div class="content-img"><img src="./assets/AppService.png" alt="logo2" /></div>
+                <h2>&lt;Desenvolvimento de Aplicativos Android e Windows/&gt;</h2>
+                <p>Soluções personalizadas para Android e Windows.</p>
+            </div>
+            <div class="box-service3">
+                <div class="content-img"><img src="./assets/DesignService.png" alt="logo3" /></div>
+                <h2>&lt;Design De Ui, Ux /&gt;</h2>
+                <p>Interfaces intuitivas e atraentes que encantam os usuários.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Sobre-nos">
+        <h1>Sobre Nós</h1>
+        <p>Na CatalystCode, somos uma equipe apaixonada de desenvolvedores dedicados a criar
+            soluções de software personalizadas para atender às necessidades exclusivas do seu
+            negócio. Combinamos criatividade, tecnologia de ponta e um compromisso inabalável com
+            a qualidade para transformar suas ideias em realidade digital. Nosso objetivo é impulsionar
+            seu sucesso, oferecendo inovação e eficiência em cada projeto.
+        </p>
+    </section>
+
+    <section id="contato">
+        <div class="caixa1">
+            <h1>Contato</h1>
+            <p>Solicite um Orçamento Personalizado:</p>
+        </div>
+
+        <div class="caixa2">
+            <img src="./assets/Email.png" alt="">
+            <p>CatalystCode@gmail.com</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>CatalystCodeS <span class="tm">TM</span> 2024</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+        </ul>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </footer>
+
+    <script>
+      
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            
+            if (document.querySelector('.menu').classList.toggle('open')) {
+                document.querySelector('.fa-bars').style.display = 'none';
+                document.querySelector('.fa-times').style.display = 'block';
+                document.querySelector('.menu').style.display = 'flex';
+            } else {
+                document.querySelector('.fa-bars').style.display = 'block';
+                document.querySelector('.fa-times').style.display = 'none';
+                document.querySelector('.menu').style.display = 'none';
+            }
+
+
+        });
+    </script>
+
+</body>
+
+</html>
